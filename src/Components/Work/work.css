@@ -1,0 +1,141 @@
+.Work {
+    margin-top: 100px;
+    width: 100%;
+    padding: 20px;
+    transition: 0.5s !important;
+  }
+  
+  @media (min-width: 768px) {
+    .Work {
+      margin: auto;
+      margin-top: 150px;
+      width: 70%;
+      padding: 40px;
+    }
+  }
+  
+  .workTitle {
+    margin-bottom: 15px;
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-family: Quicksand, Arial, sans-serif;
+    transition: 0.3s;
+  }
+  
+  .workHeading {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.8;
+    position: relative;
+    margin: 0 0 30px;
+    color: #000;
+    font-family: Playfair Display, Georgia, serif;
+    transition: 0.3s;
+  }
+  
+  .itemWork li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #000;
+    font-family: Quicksand, Arial, sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .itemWork li:hover {
+    color: var(--blue-color);
+    transform: scale(1.05);
+  }
+  
+  .Work .item {
+    position: relative;
+    transition: 0.5s !important;
+    margin-bottom: 10px;
+  }
+  
+  .Work .item img {
+    width:100% !important;
+    height: 400px;
+    transition: 0.5s !important;
+    object-fit: cover;
+  }
+  
+  .Work .box {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--blue-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    padding-left: 20px;
+  }
+  
+  .Work .item:hover .box {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .project .desc {
+    margin-top: 15px;
+  }
+  
+  .project .desc h3 a {
+    font-family: Quicksand, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+
+  
+  .project .desc p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #ccc;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    margin-bottom: 10px;
+  }
+  
+  .item-icon {
+    position: absolute;
+    bottom: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    color: #333;
+    transition: 0.3s;
+  }
+  
+  .item-icon .icon {
+    color: #333;
+    padding: 5px;
+    background: #ffffff80;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+
+  
+  .item-icon .icon a {
+    color: #333;
+    transition: color 0.3s;
+  }
+   

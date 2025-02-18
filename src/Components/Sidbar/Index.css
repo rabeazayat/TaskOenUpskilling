@@ -1,0 +1,124 @@
+:root {
+    --mainColor: #04bfe9;
+  }
+  
+  .Sidbar {
+    width: 250px;
+    height: 100vh;
+    box-shadow: 1px 1px 0px 0px #e1e1e1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    background: #f5f5f5;
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999999999999;
+
+  }
+  .toggle-btn{
+    z-index: 9999999999999;
+  }
+  /* إخفاء الـ Sidebar عند غلقه */
+  .Sidbar.closed {
+    transform: translateX(-100%);
+  }
+  
+  .Sidbar.open {
+    transform: translateX(0);
+  }
+  
+  .Sidbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Sidbar .img {
+    margin: auto;
+    margin-top: 11px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+  }
+  
+  .Sidbar .img img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .Sidbar ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    transition: 0.5s;
+    position: relative;
+  }
+  
+  .Sidbar ul li a:hover {
+    background-color: #fefdfd;
+    color: var(--mainColor);
+  }
+  
+  .Sidbar ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 3px;
+    background-color: var(--mainColor);
+    transition: 0.5s;
+  }
+  
+  .Sidbar ul li a:hover::after {
+    width: 30%;
+  }
+  
+  /* زر الإغلاق */
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    display: none; /* افتراضيًا مخفي */
+  }
+  
+  /* زر الفتح ☰ */
+  .toggle-btn {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: var(--mainColor);
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* تشغيل التأثيرات فقط على الموبايل */
+  @media screen and (max-width: 800px) {
+    .Sidbar {
+      width: 100%;
+    }
+  
+    .close {
+      display: block; /* إظهار زر الإغلاق في الموبايل */
+    }
+  
+    .toggle-btn {
+      display: block; /* إظهار زر الفتح في الموبايل */
+    }
+  }
+  

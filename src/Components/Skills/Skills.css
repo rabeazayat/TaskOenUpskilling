@@ -1,0 +1,183 @@
+:root {
+  --red-color: #ec5453;
+  --yellow-color: #f9bf3f;
+  --blue-color: #169bdd;
+  --green-color: #43a047;
+  --bnfsge-color: #a84cb8;
+  --orange-color: #ff9800;
+  --scand-color: #4054b2;
+}
+
+.Skills {
+  margin-top: 100px;
+  width: 100%;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .Skills {
+    margin: auto;
+    margin-top: 150px;
+    width: 70%;
+    padding: 40px;
+  }
+}
+.skillsTitle {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-family: Quicksand, Arial, sans-serif;
+}
+.skillsHeading {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.8;
+  position: relative;
+  margin: 0 0 30px;
+  color: #000;
+  font-family: Playfair Display, Georgia, serif;
+}
+.skillsText {
+  margin-bottom: 1.5em;
+  font-family: Quicksand, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #000000b3;
+}
+.progress-bar:after {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  content: "";
+  background: #2c98f0;
+  border-radius: 50%;
+}
+.progress-bar:before {
+  content: "75%";
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: var(--blue-color);
+}
+
+.yellow .progress-bar:after {
+  background: var(--yellow-color);
+}
+
+.yellow .progress-bar:before {
+  content: "85%";
+  color: var(--yellow-color);
+}
+
+.orange .progress-bar:after {
+  background: var(--orange-color);
+}
+
+.orange .progress-bar:before {
+  color: var(--orange-color);
+}
+
+.red .progress-bar:after {
+  background: var(--red-color);
+}
+
+.red .progress-bar:before {
+  color: var(--red-color);
+}
+
+.green .progress-bar:after {
+  background: var(--green-color);
+}
+
+.green .progress-bar:before {
+  content: "70%";
+
+  color: var(--green-color);
+}
+
+.bnfsge .progress-bar:after {
+  background: var(--bnfsge-color);
+}
+
+.bnfsge .progress-bar:before {
+  content: "90%";
+  color: var(--bnfsge-color);
+}
+
+.scand .progress-bar:after {
+  background: var(--scand-color);
+}
+
+.scand .progress-bar:before {
+  content: "80%";
+  color: var(--scand-color);
+}
+
+/* ------------------ */
+.bg-blue {
+  background: var(--blue-color) !important;
+}
+
+.bg-green {
+  background-color: var(--green-color) !important;
+}
+
+.bg-red {
+  background-color: var(--red-color) !important;
+}
+
+.bg-yellow {
+  background-color: var(--yellow-color) !important;
+}
+
+.bg-bnfsge {
+  background-color: var(--bnfsge-color) !important;
+}
+
+.bg-scand {
+  background-color: var(--scand-color) !important;
+}
+.color-blue {
+  color: var(--blue-color) !important;
+}
+
+.color-green {
+  color: var(--green-color) !important;
+}
+
+.color-red {
+  color: var(--red-color) !important;
+}
+
+.color-yellow {
+  color: var(--yellow-color) !important;
+  margin-right: 56px !important;
+}
+
+.color-bnfsge {
+  color: var(--bnfsge-color) !important;
+}
+
+.color-scand {
+  color: var(--scand-color) !important;
+}
+
+.progress-bar {
+  position: relative;
+  overflow: visible !important;
+}
+.progress,
+.progress-stacked {
+  overflow: visible !important;
+}
